@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:background="@color/whiteBack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ImageView
+        android:id="@+id/btnSettings"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/setttings"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:elegantTextHeight="true"
+        android:id="@+id/titleText"
+        style="@style/TextStyle"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:text="@string/titleStart"
+        android:textSize="35sp" />
+
+    <TextView
+        style="@style/TextStyle"
+        android:textAlignment="center"
+        android:id="@+id/showScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+
+    <Button
+        style="@style/ButtonStyle"
+        android:id="@+id/btnStart"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnStart"
+        android:textSize="24sp"
+        android:padding="10dp"
+        />
+
+    <RadioGroup
+
+        android:id="@+id/rgb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnStart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp">
+
+        <RadioButton
+            style="@style/TextStyle"
+            android:checked="true"
+            android:textSize="25sp"
+            android:id="@+id/rb1"
+            android:text="@string/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            style="@style/TextStyle"
+            android:id="@+id/rb2"
+            android:textSize="25sp"
+            android:text="@string/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            style="@style/TextStyle"
+            android:id="@+id/rb3"
+            android:textSize="25sp"
+            android:text="@string/rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_keyboards_switcher"
+    android:background="@color/whiteBack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.vlad.itiseasy.KeyboardsSwitcher">
+
+    <TextView
+        style="@style/TextStyle"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/keyTitle"
+        android:text="@string/keyTitle"/>
+    <RadioGroup
+        android:layout_below="@id/keyTitle"
+        android:id="@+id/rbKey"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <RadioButton
+            android:id="@+id/rbKey1"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/key_layout2" />
+        <RadioButton
+            android:id="@+id/rbKey2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/key_layout1"/>
+
+    </RadioGroup>
+
+    <Button
+        style="@style/ButtonStyle"
+        android:textSize="15sp"
+        android:text="@string/btnKeyOk"
+        android:id="@+id/btnKeyOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rbKey"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sound"
+    android:layout_width="match_parent"
+    android:background="@color/whiteBack"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.vlad.itiseasy.Sound">
+
+    <RadioGroup
+        android:id="@+id/rbSound"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <RadioButton
+            style="@style/TextStyle"
+            android:text="On"
+            android:checked="true"
+            android:id="@+id/rb_sOn"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/sound_on" />
+        <RadioButton
+            style="@style/TextStyle"
+            android:textAlignment="center"
+            android:text="Off"
+            android:id="@+id/rb_sOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/sound_off"/>
+
+    </RadioGroup>
+
+    <Button
+        style="@style/ButtonStyle"
+        android:textSize="15sp"
+        android:text="@string/btnKeyOk"
+        android:id="@+id/btnKeyOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rbSound"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

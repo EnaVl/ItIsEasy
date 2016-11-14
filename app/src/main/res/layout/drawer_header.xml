@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/action_settings"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/action_settings"
+    android:textColor="@color/whiteBack"
+    android:textSize="50sp"
+    android:background="#564e4e"
+    android:clickable="false"
+    android:enabled="false"
+    android:minHeight="?attr/listPreferredItemHeightSmall"/>

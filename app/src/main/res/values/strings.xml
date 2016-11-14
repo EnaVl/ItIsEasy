@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ItIsEasy</string>
+    <string name="titleStart">Let\'s start?</string>
+    <string name="titleAgain">Let\'s try one more time?</string>
+    <string name="title2">Time left</string>
+    <string name="btnStart">Start</string>
+    <string name="btnNextTask">Check</string>
+    <string name="rb1">Easy</string>
+    <string name="rb2">Medium</string>
+    <string name="rb3">Hard</string>
+    <string name="btnKeyOk">Ok</string>
+    <string name="keyTitle">Select the keyboard</string>
+    <string name="keyboards">Keyboards</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_item_sound">Sound</string>
+    <string name="drawer_item_keyboard">Keyboard</string>
+</resources>
